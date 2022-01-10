@@ -1,0 +1,192 @@
+<html>
+    <head>
+    <style>
+        @media only screen and (max-width:330px){
+            #div1{
+               
+               width:250px;
+               height:150px;
+               border:3px solid black;
+             
+               margin-top: 30px;
+           }
+           #div3{
+              
+              border:4px solid white;
+           }
+           #div4{
+               border:4px white;
+           }
+
+           #input1{
+                width:90px;
+                height:20px;
+                border:3px solid black;
+                margin-top:0px;
+                margin-left:10px;
+                text-align: center;
+            }
+            #input2{
+                width:150px;
+                height:30px;
+                border:3px solid black;
+                margin-top:15px;
+                margin-left:30px;
+                text-align: center;
+            }
+
+            
+           #add{
+                width:230px;
+                height:20px;
+                border:3px solid black;
+                margin-top:20px;
+                margin-left:10px;
+                font-size: larger;
+                font-size: 20px;
+            }
+            #details{
+                width:120px;
+                height:45px;
+                border:3px solid black;
+                margin-top:40px;
+                margin-left:10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            #apply{
+                width:120px;
+                height:45px;
+                border:3px solid black;
+                margin-top:40px;
+                margin-left:10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            #h3{
+                margin-left:20px;
+            }
+            #h1{
+                margin-left:10px;
+            }
+
+        }
+        @media only screen and (min-width:330px) and (max-width:1370px){
+            #div1{
+               
+                width:300px;
+                height:250px;
+                border:3px solid black;
+              
+                margin-top: 30px;
+            }
+            #div2{
+                position:sticky;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            #div3{
+                position:fixed;
+                width:300px;
+                height:250px;
+                border:3px solid black;
+                margin-left:340px;
+                margin-top:30px;
+                margin:left;
+            }
+            #div4{
+                width:300px;
+                height:250px;
+                border:3px solid black;
+                margin-left:370px;
+                margin-top:30px;
+                margin:left;
+            }
+            }
+            #input1{
+                width:150px;
+                height:30px;
+                border:3px solid black;
+                margin-top:20px;
+                margin-left:30px;
+                text-align: center;
+            }
+            #input2{
+                width:150px;
+                height:30px;
+                border:3px solid black;
+                margin-top:15px;
+                margin-left:30px;
+                text-align: center;
+            }
+
+            #add{
+                width:280px;
+                height:30px;
+                border:3px solid black;
+                margin-top:80px;
+                margin-left:10px;
+                font-size: larger;
+                font-size: 20px;
+            }
+            #details{
+                width:120px;
+                height:45px;
+                border:3px solid black;
+                margin-top:40px;
+                margin-left:10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            #apply{
+                width:120px;
+                height:45px;
+                border:3px solid black;
+                margin-top:40px;
+                margin-left:10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            #h3{
+                margin-left:20px;
+            }
+            #h1{
+                margin-left:10px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div id="div1"> 
+        <form>
+            <input id="input1" placeholder="Add Course" value=""/>
+            <input id="input2" placeholder="Add Couser Details" value=""/>
+             <button  id="add" onclick="addForm()">Add</button>
+        </form>
+        </div>
+        <div id="div2"> 
+        <div id="div1">
+            <form>
+                <h1 id="h1" >COURSE</h1>
+                <h3 id="h3">Description</h3>
+                <button id="details">DETAILS</button>
+                <button id="apply">APPLY</button>
+            </form>
+        </div>
+        <div id="div3">
+
+        </div>
+        <div id="div4"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function addForm(){
+        var x=document.getElementById("input1").value;
+        var y=document.getElementById("input2").value;
+        console.log(x,y)
+    }
+</script>
